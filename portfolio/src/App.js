@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  var docStyle = document.documentElement.style;
+
+// setting CSS variables inside this JS where they 
+// can be declaratively used inside the CSS file.
+document.addEventListener('mousemove', function(e) {
+  docStyle.setProperty('--mouse-x', e.clientX);
+  docStyle.setProperty('--mouse-y', e.clientY);
+});
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav></Nav>
+      <div className="ball"></div>
     </div>
   );
+}
+
+function Nav(){
+  <>
+    <div>logo</div>
+    <div>
+      <div>about</div>
+      <div>project</div>
+      <div>contact</div>
+    </div>
+  </>
 }
 
 export default App;
