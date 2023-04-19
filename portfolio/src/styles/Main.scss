@@ -1,3 +1,84 @@
-.letter {
+$textcolor : #3E3B37;
+$pointcolor : #DEDDD0;
+$pointcolor2 : #D0B069;
 
+.letter {
+    color: $textcolor;
+}
+.letter:hover {
+    color: $pointcolor2;
+}
+
+.main-text {
+    font-size: 140px;
+    font-weight: 400;
+    width: 90%;
+    margin: 0 auto;
+    div {
+        height: 130px;
+    }
+    .main-2{
+        text-align: end;
+    }
+    .main-3{
+        text-align: center;
+    }
+}
+
+.nav {
+    border-bottom: 1px solid rgb(78, 78, 78);
+
+    .navbar {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+
+        .logo {
+            padding: 10px;
+        }
+
+        .navbarR {
+            display: flex;
+            margin-left: auto;
+
+            div {
+                padding: 10px;
+            }
+        }
+    }
+
+}
+
+.eyes {
+    height: 500px;
+    width: 300px;
+    position: relative;
+    background-image: url('./../img/Munch.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    .eye {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 46%;
+        transform: translate(-38%, 0%);
+
+        .whiteEyes {
+            background: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 80%;
+
+            .ball {
+                height: 15px;
+                width: 15px;
+                border-radius: 80%;
+                background: black;
+                transform:
+                    translateX(calc(var(--mouse-x) * 0.01px)) translateY(calc(var(--mouse-y) * 0.02px));
+            }
+        }
+    }
 }

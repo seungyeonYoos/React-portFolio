@@ -1,5 +1,6 @@
 import './App.css';
 import './styles/Main.scss';
+import Nav from '../src/components/nav';
 import MainText from './components/mainText.js';
 
 function App() {
@@ -28,20 +29,5 @@ function App() {
   );
 }
 
-function Nav() {
-  return (
-    <div className='nav'>
-      <div className="navbar">
-      <div className='logo'>Seungyeon's space</div>
-      <div className="navbarR">
-        <div>about</div>
-        <div>project</div>
-        <div>contact</div>
-      </div>
-    </div>
-    </div>
-    
-  )
-}
 
 export default App;
