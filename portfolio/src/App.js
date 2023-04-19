@@ -1,4 +1,5 @@
 import './App.css';
+import './styles/Main.scss';
 import MainText from './components/mainText.js';
 
 function App() {
