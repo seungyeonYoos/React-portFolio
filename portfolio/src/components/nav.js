@@ -7,7 +7,7 @@ function Nav() {
             <div className="navbar">
                 <div className='logo'>Seungyeon's space</div>
                 <div className="navbarR">
-                    <div>abou</div>
+                    <div>about</div>
                     <div>project</div>
                     <div>contact</div>
                 </div>

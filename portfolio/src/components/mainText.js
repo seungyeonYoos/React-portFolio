@@ -1,8 +1,23 @@
+import { useEffect } from "react";
+import { useState } from "react";
+
 function MainText (){
+    let [textCount, setTextCount] = useState(0);
+    useEffect(()=>{
+        // document.getElementById("letter").addEventListener('mouseover',() =>{
+        //     setTextCount( textCount + 1 );
+        //     console.log(textCount)
+        // })
+        document.getElementsByClassName('letter')[0].addEventListener('mouseover',() =>{
+            setTextCount( textCount + 1 );
+            console.log(textCount)
+        })
+    })
+
     return (
         <div className="main-text">
             <div className="main-1">
-                <span className="letter">C</span>
+                <span className="letter" id="letter">C</span>
                 <span className="letter">R</span>
                 <span className="letter">E</span>
                 <span className="letter">A</span>
