@@ -5,6 +5,7 @@ $pointcolor2 : #D0B069;
 .letter {
     color: $textcolor;
 }
+
 .letter:hover {
     color: $pointcolor2;
 }
@@ -14,13 +15,16 @@ $pointcolor2 : #D0B069;
     font-weight: 400;
     width: 90%;
     margin: 0 auto;
+
     div {
         height: 130px;
     }
-    .main-2{
+
+    .main-2 {
         text-align: end;
     }
-    .main-3{
+
+    .main-3 {
         text-align: center;
     }
 }
@@ -36,6 +40,9 @@ $pointcolor2 : #D0B069;
 
         .logo {
             padding: 10px;
+            // transform:
+            //     translateX(calc(var(--mouse-x) * 0.06px)) translateY(calc(var(--mouse-y) * 0.03px));
+            }
         }
 
         .navbarR {
@@ -48,8 +55,6 @@ $pointcolor2 : #D0B069;
         }
     }
 
-}
-
 .eyes {
     height: 500px;
     width: 300px;
@@ -58,6 +63,7 @@ $pointcolor2 : #D0B069;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+
     .eye {
         display: flex;
         position: absolute;
@@ -79,6 +85,63 @@ $pointcolor2 : #D0B069;
                 transform:
                     translateX(calc(var(--mouse-x) * 0.01px)) translateY(calc(var(--mouse-y) * 0.02px));
             }
+        }
+    }
+}
+.aboutComponent {
+    .scroll-text {
+        color: $textcolor;
+        font-size: 100px;
+        overflow: hidden;
+        .scroll-text-w {
+            width: 3000px;
+            transition: all 0s;
+            transform: translateX(-100vw);
+        }
+    }
+    .scroll-text-2 {
+        color: $textcolor;
+        display: flex;
+        position: relative;
+        .scroll-text-2-R {
+            padding-left: 50px;
+            overflow: hidden;
+            height: 170px;
+            div {
+                transition: all 1s;
+                transform: translateY(100vh);
+                .profile {
+                    font-size: 50px;
+                    margin: 10px 0px;
+                    font-weight: 400;
+                }
+                .smallIntro {
+                    font-size: 20px;
+                }
+                .intro {
+                    font-size: 12px;
+                }
+            }
+            
+        }
+        .introduce {
+            padding-right: 50px;
+            padding-top: 70px;
+            font-size: 12px;
+            position: absolute;
+            right: 0px;
+        }
+    }
+}
+.scroll-text-3 {
+    div {
+        .scroll-text-3-img {
+            width: 80%;
+            height: 500px;
+            margin: 0 auto;
+            background-image: url(../img/sea.jpg);
+            background-position: center;
+            background-size: cover;
         }
     }
 }

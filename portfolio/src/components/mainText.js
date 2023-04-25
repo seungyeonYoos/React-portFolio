@@ -2,29 +2,7 @@ import { useEffect, useState } from "react";
 import $ from 'jquery';
 
 function MainText (){
-    // let [textCount, setTextCount] = useState(0);
-    // let textColor;
-    
-    // if ( textCount == 1 ){
-    //     textColor= '#D0B069';
-    // } else if ( textCount == 2 ){
-    //     textColor= '#DEDDD0';
-    // } else {
-    //     textColor = '#3E3B37';
-    // }
-    // useEffect(()=>{
-    // //     const timeout = setTimeout(() => {
-    // //   setTextColor('brown');
-    // // }, 2000);
 
-    //     $('.letter1').mouseover(function(){
-    //         setTextCount( textCount + 1 );
-    //         console.log(textCount);
-    //         if(textCount == 3){
-    //             setTextCount (0)
-    //         };
-    //     })
-    // })
     const [counts, setCounts] = useState(new Array(25).fill(0));
     const [textColor, setTextColor] = useState('brown');
   
