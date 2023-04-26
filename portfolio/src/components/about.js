@@ -1,13 +1,25 @@
 import $ from 'jquery';
 
 function About() {
+    $(window).scroll(function(){
+        var 높이 = $(window).scrollTop();
+        console.log(높이);
+    });
+
     $(window).scroll(function () {
-
         var height = $(window).scrollTop();
-
         var y = -50 / 801 * height + 13500 / 801;
+        var y2 = 3/46 * height + 1600/46;
+        var y3 = 1/190 * height + -478/190;
+        var y4 = -50/66 * height + 26900/66;
         $('.scroll-text-w').eq(0).css('transform', `translateX(${y}vw)`);
-
+        $('.scroll-text-3-img').eq(0).css('width', `${y2}%`);
+        $('.introduce , .smallIntro , .intro').css('opacity', y3);
+        if (height > 435 && height < 530){
+            $('.profile-SE').eq(0).css('transform', `translateY(${y4}px)`);
+        } else {
+            $('.profile-SE').eq(0).css('transform', `none`);
+        }
     });
 
     return (
@@ -20,7 +32,9 @@ function About() {
             <div className='scroll-text-2'>
                 <div className='scroll-text-2-R'>
                     <div>
-                        <p className='profile'>PROFILE</p>
+                        <div className='profile'>
+                            <div className='profile-SE'>PROFILE</div>
+                        </div>
                         <p className='smallIntro'>"A small intro"</p>
                         <p className='intro'>Hello, I have experience working as a web designer.  <br />My name is Yoo Seung-yeon, a web developer.</p>
                     </div>

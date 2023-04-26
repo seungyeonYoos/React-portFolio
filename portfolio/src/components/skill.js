@@ -1,6 +1,39 @@
-function Skill (){
+function Skill() {
     return (
-        <div>스킬이라요</div>
+        <div className="skillComponent">
+            <div className="skillComponent-1">
+                <div>
+                    <p>SKILLS&</p>
+                    <p>USING TOOLS</p>
+                </div>
+            </div>
+            <div className="skillComponent-2">
+                <div>
+                    <div>
+                        <p>TOOLS</p>
+                        <p>As a UI/UX Designer, I am efficient in both designing websites from<br />scratch, or helping a brand redesign.</p>
+                    </div>
+                    <div>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>SCSS</p>
+                        <p>REACT JS</p>
+                        <p>NODE JS</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>DESIGN TOOLS</p>
+                        <p></p>
+                    </div>
+                    <div>
+                        <p>PHOTOSHOP</p>
+                        <p>ILLUSTRATOR</p>
+                        <p>FIGMA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 

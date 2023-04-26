@@ -1,6 +1,19 @@
 $textcolor : #3E3B37;
 $pointcolor : #DEDDD0;
 $pointcolor2 : #D0B069;
+$h1 : 100px;
+$fix-h1 : 120px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 3;
+        transform: none;
+    }
+}
+
 
 .letter {
     color: $textcolor;
@@ -106,20 +119,25 @@ $pointcolor2 : #D0B069;
         .scroll-text-2-R {
             padding-left: 50px;
             overflow: hidden;
-            height: 170px;
             div {
                 transition: all 1s;
-                transform: translateY(100vh);
                 .profile {
                     font-size: 50px;
-                    margin: 10px 0px;
                     font-weight: 400;
+                    overflow: hidden;
+                    height: 66px;
+                    .profile-SE {
+                    margin: 10px 0px;
+                    transform: translateY(50px);
+                    }
                 }
                 .smallIntro {
                     font-size: 20px;
+                    opacity: 0;
                 }
                 .intro {
                     font-size: 12px;
+                    opacity: 0;
                 }
             }
             
@@ -130,18 +148,52 @@ $pointcolor2 : #D0B069;
             font-size: 12px;
             position: absolute;
             right: 0px;
+            opacity: 0;
         }
     }
 }
 .scroll-text-3 {
     div {
         .scroll-text-3-img {
-            width: 80%;
+            width: 70%;
             height: 500px;
             margin: 0 auto;
             background-image: url(../img/sea.jpg);
             background-position: center;
             background-size: cover;
+        }
+    }
+}
+
+.skillComponent {
+    color: $textcolor;
+    width: 90%;
+    margin: 0 auto;
+    .skillComponent-1 {
+        height: 250px;
+        div {
+            position: relative;
+            p {
+                font-size: $fix-h1;
+                margin: 0;
+                position: absolute;
+                white-space:nowrap;
+            }
+            p:first-child {
+                left: 20px;
+            }
+            p:last-child {
+                right: 20px;
+                padding-top: 110px;
+            }
+        }
+    }
+    .skillComponent-2 {
+        div {
+            display: flex;
+            div {
+                display: block;
+            }
         }
     }
 }
