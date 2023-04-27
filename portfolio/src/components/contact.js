@@ -1,6 +1,10 @@
 function Contact (){
     return (
-        <div>컨택트다요</div>
+        <div className="contactComponent">
+            <div>
+                <div>CONTACT</div>
+            </div>
+        </div>
     )
 }
 

@@ -10,8 +10,8 @@ function Skill() {
             <div className="skillComponent-2">
                 <div>
                     <div>
-                        <p>TOOLS</p>
-                        <p>As a UI/UX Designer, I am efficient in both designing websites from<br />scratch, or helping a brand redesign.</p>
+                        <p className="tools">TOOLS</p>
+                        <p className="tools-text">As a UI/UX Designer, I am efficient in both designing websites from<br />scratch, or helping a brand redesign.</p>
                     </div>
                     <div>
                         <p>HTML</p>
@@ -23,8 +23,8 @@ function Skill() {
                 </div>
                 <div>
                     <div>
-                        <p>DESIGN TOOLS</p>
-                        <p></p>
+                        <p className="tools">DESIGN TOOLS</p>
+                        <p className="tools-text">As a UI/UX Designer, I am efficient in both designing websites from<br />scratch, or helping a brand redesign.</p>
                     </div>
                     <div>
                         <p>PHOTOSHOP</p>

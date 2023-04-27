@@ -1,10 +1,10 @@
 import $ from 'jquery';
 
 function About() {
-    $(window).scroll(function(){
-        var 높이 = $(window).scrollTop();
-        console.log(높이);
-    });
+    // $(window).scroll(function(){
+    //     var 높이 = $(window).scrollTop();
+    //     console.log(높이);
+    // });
 
     $(window).scroll(function () {
         var height = $(window).scrollTop();
@@ -13,12 +13,18 @@ function About() {
         var y3 = 1/190 * height + -478/190;
         var y4 = -50/66 * height + 26900/66;
         $('.scroll-text-w').eq(0).css('transform', `translateX(${y}vw)`);
-        $('.scroll-text-3-img').eq(0).css('width', `${y2}%`);
+        
         $('.introduce , .smallIntro , .intro').css('opacity', y3);
         if (height > 435 && height < 530){
             $('.profile-SE').eq(0).css('transform', `translateY(${y4}px)`);
         } else {
             $('.profile-SE').eq(0).css('transform', `none`);
+        }
+        
+        if (height < 1000) {
+            $('.scroll-text-3-img').eq(0).css('width', `${y2}%`);
+        } else {
+            $('.scroll-text-3-img').eq(0).css('width', `none`);
         }
     });
 

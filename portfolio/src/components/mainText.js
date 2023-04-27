@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import $ from 'jquery';
 
 function MainText (){
+//   $(document).ready(function(){
+    
+// });
 
     const [counts, setCounts] = useState(new Array(25).fill(0));
     const [textColor, setTextColor] = useState('brown');

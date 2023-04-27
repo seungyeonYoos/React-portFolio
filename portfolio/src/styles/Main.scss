@@ -3,11 +3,14 @@ $pointcolor : #DEDDD0;
 $pointcolor2 : #D0B069;
 $h1 : 100px;
 $fix-h1 : 120px;
+$small-font : 12px;
+
 @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 3;
         transform: none;
@@ -31,14 +34,21 @@ $fix-h1 : 120px;
 
     div {
         height: 130px;
+
+    }
+
+    .main-1 {
+        animation: fadeIn 0.8s ease-in-out;
     }
 
     .main-2 {
         text-align: end;
+        animation: fadeIn 1s ease-in-out;
     }
 
     .main-3 {
         text-align: center;
+        animation: fadeIn 1.2s ease-in-out;
     }
 }
 
@@ -55,18 +65,18 @@ $fix-h1 : 120px;
             padding: 10px;
             // transform:
             //     translateX(calc(var(--mouse-x) * 0.06px)) translateY(calc(var(--mouse-y) * 0.03px));
-            }
-        }
-
-        .navbarR {
-            display: flex;
-            margin-left: auto;
-
-            div {
-                padding: 10px;
-            }
         }
     }
+
+    .navbarR {
+        display: flex;
+        margin-left: auto;
+
+        div {
+            padding: 10px;
+        }
+    }
+}
 
 .eyes {
     height: 500px;
@@ -101,47 +111,57 @@ $fix-h1 : 120px;
         }
     }
 }
+
 .aboutComponent {
     .scroll-text {
         color: $textcolor;
         font-size: 100px;
         overflow: hidden;
+
         .scroll-text-w {
             width: 3000px;
             transition: all 0s;
             transform: translateX(-100vw);
         }
     }
+
     .scroll-text-2 {
         color: $textcolor;
         display: flex;
         position: relative;
+
         .scroll-text-2-R {
             padding-left: 50px;
             overflow: hidden;
+
             div {
                 transition: all 1s;
+
                 .profile {
                     font-size: 50px;
                     font-weight: 400;
                     overflow: hidden;
                     height: 66px;
+
                     .profile-SE {
-                    margin: 10px 0px;
-                    transform: translateY(50px);
+                        margin: 10px 0px;
+                        transform: translateY(50px);
                     }
                 }
+
                 .smallIntro {
                     font-size: 20px;
                     opacity: 0;
                 }
+
                 .intro {
                     font-size: 12px;
                     opacity: 0;
                 }
             }
-            
+
         }
+
         .introduce {
             padding-right: 50px;
             padding-top: 70px;
@@ -152,6 +172,7 @@ $fix-h1 : 120px;
         }
     }
 }
+
 .scroll-text-3 {
     div {
         .scroll-text-3-img {
@@ -169,30 +190,91 @@ $fix-h1 : 120px;
     color: $textcolor;
     width: 90%;
     margin: 0 auto;
+
     .skillComponent-1 {
         height: 250px;
+
         div {
             position: relative;
+
             p {
                 font-size: $fix-h1;
                 margin: 0;
                 position: absolute;
-                white-space:nowrap;
+                white-space: nowrap;
             }
+
             p:first-child {
                 left: 20px;
             }
+
             p:last-child {
                 right: 20px;
                 padding-top: 110px;
             }
         }
     }
+
     .skillComponent-2 {
         div {
             display: flex;
+
             div {
                 display: block;
+                width: 50%;
+
+                .tools {
+                    font-size: 70px;
+                    margin: 0px;
+                    font-weight: 500;
+                }
+
+                .tools-text {
+                    margin: 0px;
+                    font-size: $small-font;
+                }
+            }
+
+            div:last-child {
+                font-size: 50px;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.projectComponent {
+    .project-scroll-text {
+        color: $textcolor;
+        font-size: 100px;
+        // overflow: hidden;
+
+        .project-scroll-text-w {
+            width: 3000px;
+            transition: all 0s;
+            transform: translateX(-100vw);
+
+            div {
+                height: 150px;
+            }
+        }
+
+        .project-card {
+            height: 3000px;
+
+            .project-card-box {
+                position: sticky;
+                top: 100px;
+                margin-top: 100px;
+
+                .project-card-box-img {
+                    display: block;
+                    margin: auto;
+                    max-width: 70%;
+                }
             }
         }
     }
