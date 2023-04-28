@@ -1,7 +1,4 @@
 function Nav() {
-    document.addEventListener('click', function() {
-        console.log(11)
-      });
     return (
         <div className='nav'>
             <div className="navbar">

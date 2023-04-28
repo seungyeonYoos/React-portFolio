@@ -11,8 +11,8 @@ function Project (){
 
     $(window).scroll(function () {
         var height = $(window).scrollTop();
-        var y = -50 / 801 * height + 13500 / 801;
-        $('.project-scroll-text-w').eq(0).css('transform', `translateX(${y}vw)`);
+        var y5 = -50 / 801 * height + 13500 / 801;
+        $('.project-scroll-text-w').eq(0).css('transform', `translateX(${y5}vw)`);
     });
 
     return (
