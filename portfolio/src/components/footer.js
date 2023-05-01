@@ -1,6 +1,6 @@
 function Footer (){
     return(
-        <div></div>
+        <div>푸터다요</div>
     )
 }
 
