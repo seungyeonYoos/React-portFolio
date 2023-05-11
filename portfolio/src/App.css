@@ -4,5 +4,29 @@ body {
   align-items:center;
   justify-content:center;
   width: 100%;
-  background: #C1C0B7;
 }
+
+.text {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  border-right: 1px solid #3E3B37;
+}
+.hr {
+  background-color: #3E3B37;
+  height: 1px;
+  border: 0;
+}
+
+.scrolled {
+  opacity: 1 !important;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

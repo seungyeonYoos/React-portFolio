@@ -1,26 +1,26 @@
 import $ from 'jquery';
+import React from 'react';
 
-function About() {
-    // $(window).scroll(function(){
-    //     var 높이 = $(window).scrollTop();
-    //     console.log(높이);
-    // });
+
+const About = React.forwardRef((props, ref) =>{
+
+    const { name } = props;
 
     $(window).scroll(function () {
         var height = $(window).scrollTop();
         var y = -50 / 801 * height + 13500 / 801;
-        var y2 = 3/46 * height + 1600/46;
-        var y3 = 1/190 * height + -478/190;
-        var y4 = -50/66 * height + 26900/66;
+        var y2 = 3 / 46 * height + 1600 / 46;
+        var y3 = 1 / 190 * height + -478 / 190;
+        var y4 = -50 / 66 * height + 26900 / 66;
         $('.scroll-text-w').eq(0).css('transform', `translateX(${y}vw)`);
-        
+
         $('.introduce , .smallIntro , .intro').css('opacity', y3);
-        if (height > 435 && height < 530){
+        if (height > 435 && height < 530) {
             $('.profile-SE').eq(0).css('transform', `translateY(${y4}px)`);
         } else {
             $('.profile-SE').eq(0).css('transform', `none`);
         }
-        
+
         if (height < 1000) {
             $('.scroll-text-3-img').eq(0).css('width', `${y2}%`);
         } else {
@@ -29,7 +29,7 @@ function About() {
     });
 
     return (
-        <div className="aboutComponent">
+        <div className="aboutComponent" ref={ref}>
             <div className='scroll-text'>
                 <div className='scroll-text-w'>
                     <div> - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - </div>
@@ -59,6 +59,8 @@ function About() {
             </div>
         </div>
     )
-}
+});
+
+
 
 export default About;

@@ -1,12 +1,13 @@
-function Nav() {
+function Nav(props) {
+
     return (
         <div className='nav'>
             <div className="navbar">
-                <div className='logo'>Seungyeon's space</div>
+                <div className='logo'>SEUNGYEON'S WEB</div>
                 <div className="navbarR">
-                    <div>about</div>
-                    <div>project</div>
-                    <div>contact</div>
+                    <div onClick={props.handleClick}>ABOUT</div>
+                    <div onClick={props.projectClick}>PROJECT</div>
+                    <div onClick={props.contactClick}>CONTACT</div>
                 </div>
             </div>
         </div>
