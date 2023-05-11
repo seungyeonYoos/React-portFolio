@@ -12,5 +12,5 @@
 
 &nbsp;
 ## :link: Link
-[Onetable](http://101.101.219.234:3000](https://seungyeonyoos.github.io/)/)
+[Portfolio](http://101.101.219.234:3000](https://seungyeonyoos.github.io/)/)
 
