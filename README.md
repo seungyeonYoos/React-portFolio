@@ -8,8 +8,3 @@
 
 - Navbar / footer
 - Main page
-
-&nbsp;
-## :link: Link
-[Portfolio](https://seungyeonyoos.github.io/)
-
