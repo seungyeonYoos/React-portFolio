@@ -11,5 +11,5 @@
 
 &nbsp;
 ## :link: Link
-[Portfolio](http://101.101.219.234:3000](https://seungyeonyoos.github.io/)/)
+[Portfolio](https://seungyeonyoos.github.io/)
 
