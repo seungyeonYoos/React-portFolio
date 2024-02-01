@@ -52,7 +52,7 @@ function Skill() {
             </div>
             <div className="skillComponent-2">
                 <div className='toolsBox'>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <p className="tools">TOOLS</p>
                         <p className="tools-text">As a UI/UX Designer, I am efficient in both designing websites from<br />scratch, or helping a brand redesign.</p>
                     </div>
@@ -68,7 +68,7 @@ function Skill() {
                     </div>
                 </div>
                 <div className='designToolsBox'>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <p className="tools">DESIGN TOOLS</p>
                         <p className="tools-text">As a UI/UX Designer, I am efficient in both designing websites from<br />scratch, or helping a brand redesign.</p>
                     </div>

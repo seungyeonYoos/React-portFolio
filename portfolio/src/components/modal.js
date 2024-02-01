@@ -51,12 +51,17 @@ function ModalBasic({ modalOpen, setModalOpen, showModal }) {
                             <Col><input type="text" placeholder="메세지" className="message" name="message"/></Col>
                         </Row>
                     </Row>
-                    <div className='modalSubmit'>
-                        <div className='modalSubmitButtonDiv'>
-                            <button type="submit" className='modalSubmitButton'>SUBMIT</button>
-                            <button type="submit" className='modalSubmitButton-2'>SUBMIT</button>
-                        </div>
+                    <button
+                    type="submit"
+                    className="sig-button"
+                  >
+                    <div className="wave">
+                       SUBMIT
                     </div>
+                    <div className="wave-2">
+                       SUBMIT
+                    </div>
+                  </button>
                 </Container>
                 </form>
                 

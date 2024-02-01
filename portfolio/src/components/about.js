@@ -32,25 +32,25 @@ const About = React.forwardRef((props, ref) =>{
         <div className="aboutComponent" ref={ref}>
             <div className='scroll-text'>
                 <div className='scroll-text-w'>
-                    <div> - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - </div>
+                    <div> - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT -</div>
                 </div>
             </div>
             <div className='scroll-text-2'>
                 <div className='scroll-text-2-R'>
                     <div>
                         <div className='profile'>
-                            <div className='profile-SE'>PROFILE</div>
+                            <div className='profile-SE' data-aos="fade-up" data-aos-duration="2000">PROFILE</div>
                         </div>
-                        <p className='smallIntro'>"A small intro"</p>
-                        <p className='intro'>Hello, I have experience working as a web designer.  <br />My name is Yoo Seung-yeon, a web developer.</p>
+                        <p className='smallIntro' data-aos="fade-up" data-aos-duration="2000">"A small intro"</p>
+                        <p className='intro' data-aos="fade-up" data-aos-duration="2000">Hello, I have experience working as a web designer.  <br />My name is Yoo Seung-yeon, a web developer.</p>
                     </div>
                 </div>
-                <div className='introduce'>Self taught UX/UI designer with a passion to learn new skills and technologies.<br />
-                    I am currently studying web development in Paris at "L'école multimedia".<br />
-                    I have been building interfaces for startups since 2020.<br />
-                    I help businesses leave a lasting impression in the digital world.<br />
-                    With a touch of creativity and empathy, I specialize in crafting modern<br />
-                    websites that offer user-centric experiences .</div>
+                <div className='introduce' data-aos="fade-up" data-aos-duration="2000">Name : 유승연<br />
+                    Birth : 96.09.02<br />
+                    Address : 경기도 안산<br />
+                    Phone : 010 - 2434 - 7902<br />
+                    E-mail : cjsrnr90218@gmail.com<br />
+                    Eduation : 고려사이버대학교 재학중 (소프트웨어 공학과)</div>
             </div>
             <div className='scroll-text-3'>
                 <div>
